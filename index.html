@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Counter App</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Javascript Character Counters</h2>
+      <p>
+        Please enter text below<strong>(max character limit is 150)</strong> to
+        count characters
+      </p>
+
+      <textarea
+        id="textarea"
+        class="textarea"
+        maxlength="150"
+        placeholder="start typing here..."
+      ></textarea>
+
+      <div>
+        <button id="copytext">Copy Entered Text</button>
+        <button id="resetbutton">Reset Written Text</button>
+      </div>
+
+      <div class="counter-container">
+        <p>Total Characters Typed: <span id="total-counter">0</span></p>
+        <p>Remaining Characters: <span id="remaining-counter">150</span></p>
+      </div>
+
+      <footer>
+        <p>Created by Somenath Choudhuy</p>
+      </footer>
+    </div>
+
+    <div class="dark-light-mode">
+      <i class="fa-solid fa-circle-half-stroke" id="dark-mode-toggle"></i>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://kit.fontawesome.com/c6560b50ba.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
